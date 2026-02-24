@@ -28,3 +28,17 @@ Acceptance Criteria
 Given I have incremented the counter to 2
 When I restart the service
 Then the counter should still return 2
+
+---
+### Feature 5 : Deploy service to the cloud (50% finished)
+As a Service Provider,
+I need the service to be deployed in the cloud,
+So that I can scale capacity with user demand
+
+Details and Assumptions
+We will use IBM Cloud
+Deploy as a Cloud Foundry app
+Acceptance Criteria
+Given I have deployed to the cloud
+When a customer comes to our URL
+Then our service will be available
