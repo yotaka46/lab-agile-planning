@@ -1,6 +1,8 @@
 # lab-agile-planning
 This repository contains the lab for agile planning
 
+---
+#### Feature 1 : Need a service that has a counter
 As a User,
 I need a service that has a counter
 So that I can keep track of how many times something has been done.
@@ -12,3 +14,17 @@ Acceptance Criteria
 Given I have incremented the counter to 2
 When I make a call to get the current value
 Then it should return 2 as the counter value
+
+---
+#### Feature 2: Must persist counter across restarts
+As a Service Provider,
+I need the service to persist the last known count
+So that users don't lose track of their counts after the service is restarted.
+
+Details and Assumptions
+We will use a Redis database
+Counter will be stored as a name-value pair
+Acceptance Criteria
+Given I have incremented the counter to 2
+When I restart the service
+Then the counter should still return 2
